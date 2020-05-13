@@ -101,7 +101,7 @@ for line in fhand:
 #Search for lines starting "X-DSPAM-Confidenc:"
 #find the folowing floating point value 
 #print the average value at the end
-
+'''
 fname = input('Enter the file name: ')
 try:
     fhand = open(fname)
@@ -123,3 +123,26 @@ for line in fhand:
 
 average = total/count
 print('Average Value: ', average)
+'''
+#Exercise 3
+#Make an easter egg
+#If user enters "na na boo boo" 
+#print something odd
+
+fname = input('Enter the file name: ')
+
+if fname == 'na na boo boo':
+    print("NA NA BOO BOO TO YOU - You have been punk'd")
+    exit()
+
+try:
+    fhand = open(fname)
+except:
+    print("File '", fname, "' not found")
+    exit()
+
+count = 0
+for line in fhand:
+    if line.startswith('Subject:'):
+        count += 1
+print('There were', count, 'subject lines in', fname)
