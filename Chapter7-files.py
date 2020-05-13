@@ -107,6 +107,7 @@ try:
     fhand = open(fname)
 except:
     print('File not found did you read the instruction')
+    print('Adding Lazer Eyes to find my data')
     exit()
 
 count = 0
