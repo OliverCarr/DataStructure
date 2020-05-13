@@ -106,7 +106,7 @@ fname = input('Enter the file name: ')
 try:
     fhand = open(fname)
 except:
-    print('File not found')
+    print('File not found did you read the instruction')
     exit()
 
 count = 0
