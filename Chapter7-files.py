@@ -102,7 +102,7 @@ for line in fhand:
 #find the folowing floating point value 
 #print the average value at the end
 
-fname = input('Enter the file name: ')
+fname = input('Enter the file name: its called mbox.txt')
 try:
     fhand = open(fname)
 except:
