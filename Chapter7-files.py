@@ -106,11 +106,11 @@ fname = input('Enter the file name: ')
 try:
     fhand = open(fname)
 except:
-    print('File not found did you read the instruction')
-    print('Adding Lazer Eyes to find my data')
-    print("and its missing somtheing")
+    print('File not found')
+
     exit()
 
+print(fhand)
 count = 0
 total = 0
 for line in fhand:
@@ -120,6 +120,7 @@ for line in fhand:
     line = line.strip()
     line = float(line)
     total = total + line
+    print(count,line,total)
 
 average = total/count
 print('Average Value: ', average)
@@ -128,7 +129,7 @@ print('Average Value: ', average)
 #Make an easter egg
 #If user enters "na na boo boo" 
 #print something odd
-
+'''
 fname = input('Enter the file name: ')
 
 if fname == 'na na boo boo':
@@ -146,3 +147,4 @@ for line in fhand:
     if line.startswith('Subject:'):
         count += 1
 print('There were', count, 'subject lines in', fname)
+'''
