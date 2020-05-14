@@ -124,5 +124,50 @@ del t[1:5]      #upto, but not including, the second element
 print(t)
 '''
 #Lists and Function
-
+'''
 nums = [3, 41, 12, 9, 74, 15]
+
+print(len(nums))
+
+print(max(nums))
+
+print(min(nums))
+
+print(sum(nums)) #Only works with values
+
+print(sum(nums)/len(nums))  #Average
+'''
+#More average
+'''
+print('Average finder\nEnter a number and hit enter\nWhen you have finished write "done"')
+total = 0
+count = 0
+while (True):
+    inp = input('Enter a number: ')
+    if inp == 'done': break
+    try:
+        value = float(inp)
+    except:
+        print('Not a valid number')
+        continue
+        
+        
+    total = total + value
+    count += 1
+
+average = total/count
+print('Average:', average)
+'''
+'''
+numlist = list()
+while (True):
+    inp = input('Enter a number: ')
+    if inp == 'done': break
+    value = float(inp)
+    numlist.append(value)
+
+average = sum(numlist) / len(numlist)
+print('Average:', average)
+'''
+
+#Lists and String
