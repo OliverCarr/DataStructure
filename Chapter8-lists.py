@@ -47,8 +47,8 @@ print('Chalk' in cheese)
 '''
 #Traversing a list
 '''
-for cheese in cheese:   #The for loop is weird
-    print(cheese)   
+for i in cheese:   #The for loop is weird
+    print(i)   
 
 
 numbers = [1,2,3,4,5,6,7,8,9]
@@ -71,6 +71,7 @@ print(c)
 
 d = a*3
 print(d)
+
 #Addition and multiplication concatinate lists 
 '''
 #List slices
@@ -101,7 +102,7 @@ t.sort()    #puts it in order
 print(t)
 '''
 #Deleting elements
-
+'''
 t = ['a','b','c']
 x = t.pop(1)    #'Pops out' one element and stores it
 print(t)
@@ -121,3 +122,7 @@ t = ['a','b','c']
 t.extend(['d', 'e', 'f'])
 del t[1:5]      #upto, but not including, the second element
 print(t)
+'''
+#Lists and Function
+
+nums = [3, 41, 12, 9, 74, 15]
