@@ -26,5 +26,20 @@ empty = []
 print(cheese[0])
 
 numbers = [17, 123]
-numbers[1] = 5
+numbers[1] = 5 #Unlike strings lists are mutable 
 print(numbers)
+#This is mapping
+
+#List indices work the same as string indices
+
+#Any integer expression can be used as an index
+
+#If you try to read or write an element that does not exist,
+#you get an IndexError
+
+#If an idex has a negative value,
+#it counts backwards from the end of the list
+
+print('Chalk' in cheese)
+#The in operator also works
+
