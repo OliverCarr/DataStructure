@@ -171,3 +171,32 @@ print('Average:', average)
 '''
 
 #Lists and String
+'''
+s = 'spam'
+t = list(s)
+print(t)
+
+s = 'pining for the fjords'
+t = s.split()  
+print(t)
+print(t[2])
+
+s = 'spam-spam-spam'
+delimiter = '-'
+s = s.split(delimiter)
+print(s)
+
+delimiter = ' '
+t = delimiter.join(t)
+
+print(t)
+'''
+#Parsing lines
+
+
+fhand = open('mbox-short.txt')
+for line in fhand:
+    line = line.rstrip()
+    if not line.startswith('From '): continue
+    words = line.split()
+    print(words[2])
